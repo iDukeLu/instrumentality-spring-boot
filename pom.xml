@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.ibaleine.boot</groupId>
+    <artifactId>instrumentality-spring-boot</artifactId>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+
+    <name>instrumentality-spring-boot</name>
+    <description>The Spring Boot Instrumentality Project</description>
+    <url>https://github.com/iDukeLu/instrumentality-spring-boot</url>
+
+    <licenses>
+        <license>
+            <name>The MIT License (MIT)</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Duke Lu</name>
+            <email>idukelu4wk@163.com</email>
+            <url>http://www.idukelu.com</url>
+        </developer>
+    </developers>
+
+    <modules>
+
+    </modules>
+
+    <properties>
+        <revision>2.2.2.RELEASE</revision>
+        <spring-boot.version>${revision}</spring-boot.version> <!-- update -->
+        <spring-cloud.version>Hoxton.SR1</spring-cloud.version> <!-- update -->
+        <flatten-maven-plugin.version>1.1.0</flatten-maven-plugin.version>
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://repo.rdc.aliyun.com/repository/118184-release-WMJsKn/</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <url>https://repo.rdc.aliyun.com/repository/118184-snapshot-4tGk7w/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>
