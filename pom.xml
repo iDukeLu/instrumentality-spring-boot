@@ -29,6 +29,7 @@
 
     <modules>
         <module>instrumentality-spring-boot-dependencies</module>
+        <module>instrumentality-spring-boot-parent</module>
     </modules>
 
     <properties>

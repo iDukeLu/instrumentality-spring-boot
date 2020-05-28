@@ -13,7 +13,7 @@
     <artifactId>instrumentality-spring-boot-dependencies</artifactId>
     <packaging>pom</packaging>
 
-    <name>instrumentality-spring-boot-dependencies</name>
+    <name>instrumentality-spring-boot :: dependencies</name>
     <description>The Dependencies of Instrumentality Spring Boot Project</description>
     <url>https://github.com/iDukeLu/instrumentality-spring-boot/instrumentality-spring-boot-dependencies</url>
 
