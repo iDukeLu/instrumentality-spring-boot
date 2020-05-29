@@ -14,8 +14,8 @@
     <packaging>pom</packaging>
 
     <name>instrumentality-spring-boot :: parent</name>
-    <description>The Dependencies of Instrumentality Spring Boot Project</description>
-    <url>https://github.com/iDukeLu/instrumentality-spring-boot/instrumentality-spring-boot-dependencies</url>
+    <description>The Parent of Instrumentality Spring Boot Project</description>
+    <url>https://github.com/iDukeLu/instrumentality-spring-boot</url>
 
     <properties>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -199,4 +199,34 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>flatten-maven-plugin</artifactId>
+                <inherited>true</inherited>
+                <executions>
+                    <execution>
+                        <!-- Tidy up all POMs before they are published -->
+                        <id>flatten</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>flatten</goal>
+                        </goals>
+                        <configuration>
+                            <updatePomFile>true</updatePomFile>
+                            <flattenMode>bom</flattenMode>
+                            <pomElements>
+                                <parent>expand</parent>
+                                <properties>keep</properties>
+                                <repositories>keep</repositories>
+                                <pluginRepositories>keep</pluginRepositories>
+                            </pomElements>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>

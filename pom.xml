@@ -27,18 +27,6 @@
         </developer>
     </developers>
 
-    <modules>
-        <module>instrumentality-spring-boot-dependencies</module>
-        <module>instrumentality-spring-boot-parent</module>
-    </modules>
-
-    <properties>
-        <spring-boot.version>2.2.2.RELEASE</spring-boot.version> <!-- update -->
-        <spring-cloud.version>Hoxton.SR1</spring-cloud.version> <!-- update -->
-        <flatten-maven-plugin.version>1.1.0</flatten-maven-plugin.version>
-        <revision>${spring-boot.version}</revision>
-    </properties>
-
     <distributionManagement>
         <repository>
             <id>rdc-releases</id>
@@ -50,4 +38,22 @@
         </snapshotRepository>
     </distributionManagement>
 
+    <properties>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <java.version>1.8</java.version>
+        <flatten-maven-plugin.version>1.1.0</flatten-maven-plugin.version>
+        <spring-boot.version>2.2.2.RELEASE</spring-boot.version> <!-- update -->
+        <revision>${spring-boot.version}</revision>
+    </properties>
+
+    <modules>
+        <module>instrumentality-spring-boot-dependencies</module>
+        <module>instrumentality-spring-boot-parent</module>
+        <module>instrumentality-spring-boot-test</module>
+    </modules>
 </project>

@@ -15,28 +15,21 @@
 
     <name>instrumentality-spring-boot :: dependencies</name>
     <description>The Dependencies of Instrumentality Spring Boot Project</description>
-    <url>https://github.com/iDukeLu/instrumentality-spring-boot/instrumentality-spring-boot-dependencies</url>
+    <url>https://github.com/iDukeLu/instrumentality-spring-boot</url>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring-boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
-                <version>${spring-boot.version}</version>
+                <version>${revision}</version>
                 <scope>test</scope>
                 <exclusions>
                     <exclusion>
@@ -54,6 +47,7 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
                 <version>${flatten-maven-plugin.version}</version>
+                <inherited>false</inherited>
                 <executions>
                     <execution>
                         <!-- Flatten and simplify our own POM for install/deploy -->
@@ -66,11 +60,8 @@
                             <updatePomFile>true</updatePomFile>
                             <flattenMode>bom</flattenMode>
                             <pomElements>
-                                <properties>keep</properties>
+                                <properties>remove</properties>
                                 <dependencyManagement>resolve</dependencyManagement>
-                                <pluginManagement>keep</pluginManagement>
-                                <repositories>keep</repositories>
-                                <pluginRepositories>keep</pluginRepositories>
                             </pomElements>
                         </configuration>
                     </execution>
