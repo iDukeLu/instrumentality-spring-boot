@@ -47,7 +47,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <java.version>1.8</java.version>
         <flatten-maven-plugin.version>1.1.0</flatten-maven-plugin.version>
-        <spring-boot.version>2.2.2.RELEASE</spring-boot.version> <!-- update -->
+        <spring-boot.version>2.3.0.RELEASE</spring-boot.version> <!-- update -->
         <revision>${spring-boot.version}</revision>
     </properties>
 
