@@ -42,6 +42,15 @@
     </dependencyManagement>
 
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${revision}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -62,6 +71,7 @@
                             <pomElements>
                                 <properties>remove</properties>
                                 <dependencyManagement>resolve</dependencyManagement>
+                                <pluginManagement>keep</pluginManagement>
                             </pomElements>
                         </configuration>
                     </execution>

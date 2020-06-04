@@ -54,6 +54,7 @@
     <modules>
         <module>instrumentality-spring-boot-dependencies</module>
         <module>instrumentality-spring-boot-parent</module>
+        <module>instrumentality-spring-boot-starters</module>
         <module>instrumentality-spring-boot-test</module>
     </modules>
 </project>
