@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.ibaleine.boot</groupId>
-    <artifactId>instrumentality-spring-boot</artifactId>
+    <artifactId>instrumentality-spring-boot-project</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
 
-    <name>instrumentality-spring-boot</name>
+    <name>instrumentality-spring-boot :: project</name>
     <description>The Spring Boot Instrumentality Project</description>
     <url>https://github.com/iDukeLu/instrumentality-spring-boot</url>
 

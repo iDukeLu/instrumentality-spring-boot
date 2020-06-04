@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>cn.ibaleine.boot</groupId>
-        <artifactId>instrumentality-spring-boot</artifactId>
+        <artifactId>instrumentality-spring-boot-project</artifactId>
         <version>${revision}</version>
         <relativePath>../</relativePath>
     </parent>
