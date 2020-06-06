@@ -14,4 +14,8 @@
     <name>instrumentality-spring-boot :: starters</name>
     <description>The Starters of Instrumentality Spring Boot Project</description>
     <url>https://github.com/iDukeLu/instrumentality-spring-boot</url>
+
+    <modules>
+        <module>instrumentality-spring-boot-starter</module>
+    </modules>
 </project>
