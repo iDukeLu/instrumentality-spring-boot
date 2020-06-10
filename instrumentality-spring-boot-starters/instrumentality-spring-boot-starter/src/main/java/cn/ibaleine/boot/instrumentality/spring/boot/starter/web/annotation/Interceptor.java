@@ -23,11 +23,23 @@ import java.util.List;
 @Component
 public @interface Interceptor {
 
+    /**
+     * 拦截路径模型，默认为 /**
+     */
     String[] pathPatterns() default {"/**"};
 
+    /**
+     * 拦截路径模型
+     */
     String[] excludePatterns() default {};
 
+    /**
+     * 排序，默认 0
+     */
     int order() default 0;
 
+    /**
+     * 环境
+     */
     String profile() default "";
 }
