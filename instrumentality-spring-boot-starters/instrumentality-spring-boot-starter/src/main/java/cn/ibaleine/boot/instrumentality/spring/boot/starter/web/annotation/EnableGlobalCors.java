@@ -1,6 +1,8 @@
 package cn.ibaleine.boot.instrumentality.spring.boot.starter.web.annotation;
 
+import cn.ibaleine.boot.instrumentality.spring.boot.starter.web.WebConfiguration;
 import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;
 
@@ -14,6 +16,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited
+@Import(WebConfiguration.class)
 public @interface EnableGlobalCors {
 
     /**

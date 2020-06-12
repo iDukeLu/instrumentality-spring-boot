@@ -1,5 +1,7 @@
 package cn.ibaleine.boot.instrumentality.spring.boot.starter.web.annotation;
 
+import cn.ibaleine.boot.instrumentality.spring.boot.starter.web.WebConfiguration;
+import org.springframework.context.annotation.Import;
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.stereotype.Component;
 import org.springframework.util.AntPathMatcher;
@@ -21,6 +23,7 @@ import java.util.List;
 @Documented
 @Inherited
 @Component
+@Import(WebConfiguration.class)
 public @interface Interceptor {
 
     /**
