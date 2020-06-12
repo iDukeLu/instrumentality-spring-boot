@@ -20,8 +20,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <groupId>cn.ibaleine.boot</groupId>
+            <artifactId>instrumentality-spring-boot-starter</artifactId>
         </dependency>
 
         <dependency>
